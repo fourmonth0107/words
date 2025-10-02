@@ -34,37 +34,41 @@
         .header h1 {
             margin: 0;
             font-size: 2.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: bold;
         }
 
-        .content {
-            padding: 30px;
+        .setup-screen, .game-screen, .result-screen {
+            padding: 40px;
         }
 
-        .setup-screen {
-            text-align: center;
-        }
-
-        .option-group {
+        .setup-options {
+            display: grid;
+            gap: 30px;
             margin: 30px 0;
         }
 
+        .option-group {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+        }
+
         .option-group h3 {
-            color: #555;
-            margin-bottom: 15px;
+            margin: 0 0 15px 0;
+            color: #495057;
             font-size: 1.3rem;
         }
 
         .option-buttons {
             display: flex;
             gap: 15px;
-            justify-content: center;
             flex-wrap: wrap;
         }
 
         .option-btn {
             padding: 12px 24px;
-            border: 2px solid #ddd;
+            border: 2px solid #dee2e6;
             background: white;
             border-radius: 25px;
             cursor: pointer;
@@ -74,73 +78,72 @@
         }
 
         .option-btn:hover {
+            background: #e9ecef;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         .option-btn.selected {
-            background: #667eea;
+            background: #007bff;
             color: white;
-            border-color: #667eea;
+            border-color: #007bff;
         }
 
         .start-btn {
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            background: linear-gradient(45deg, #28a745, #20c997);
             color: white;
             border: none;
             padding: 15px 40px;
-            border-radius: 30px;
             font-size: 1.2rem;
-            font-weight: bold;
+            border-radius: 30px;
             cursor: pointer;
-            margin-top: 30px;
             transition: all 0.3s ease;
+            display: block;
+            margin: 30px auto 0;
+            font-weight: bold;
         }
 
         .start-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
         }
 
-        .game-screen {
-            display: none;
-        }
-
-        .game-header {
+        .game-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
-            padding: 20px;
             background: #f8f9fa;
+            padding: 20px;
             border-radius: 15px;
+            margin-bottom: 30px;
         }
 
         .timer {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #ff6b6b;
+            color: #dc3545;
         }
 
         .progress {
             font-size: 1.2rem;
-            color: #667eea;
+            color: #495057;
         }
 
         .question-card {
-            background: #f8f9fa;
+            background: white;
+            border: 3px solid #e9ecef;
+            border-radius: 20px;
             padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .question-type {
-            background: #667eea;
+            background: #007bff;
             color: white;
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.9rem;
+            font-weight: bold;
             display: inline-block;
             margin-bottom: 20px;
         }
@@ -148,125 +151,156 @@
         .question-text {
             font-size: 1.5rem;
             margin-bottom: 25px;
-            color: #333;
+            line-height: 1.6;
         }
 
-        .answers {
+        .options-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
             gap: 15px;
-            max-width: 600px;
-            margin: 0 auto;
         }
 
-        .answer-btn {
-            padding: 15px 20px;
-            border: 2px solid #ddd;
-            background: white;
-            border-radius: 10px;
+        .option {
+            background: #f8f9fa;
+            border: 3px solid #dee2e6;
+            padding: 20px;
+            border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 1.1rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
 
-        .answer-btn:hover {
-            background: #f0f0f0;
+        .option:hover {
+            background: #e9ecef;
             transform: translateY(-2px);
         }
 
-        .answer-btn.selected {
-            background: #667eea;
+        .option.selected {
+            background: #007bff;
             color: white;
-            border-color: #667eea;
+            border-color: #007bff;
+        }
+
+        .option.correct {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .option.incorrect {
+            background: #dc3545;
+            color: white;
+            border-color: #dc3545;
         }
 
         .next-btn {
-            background: #28a745;
+            background: #007bff;
             color: white;
             border: none;
             padding: 12px 30px;
             border-radius: 25px;
             cursor: pointer;
-            font-size: 1rem;
-            margin-top: 20px;
+            font-size: 1.1rem;
+            margin: 20px auto 0;
+            display: block;
             transition: all 0.3s ease;
         }
 
         .next-btn:hover {
-            background: #218838;
+            background: #0056b3;
             transform: translateY(-2px);
         }
 
-        .result-screen {
-            display: none;
+        .result-card {
             text-align: center;
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
         }
 
-        .score-display {
-            background: linear-gradient(45deg, #28a745, #20c997);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
+        .score {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #28a745;
             margin: 20px 0;
         }
 
-        .score-display h2 {
-            margin: 0 0 10px 0;
-            font-size: 2rem;
-        }
-
-        .score-display p {
-            margin: 5px 0;
-            font-size: 1.2rem;
-        }
-
-        .review-section {
-            text-align: left;
+        .answers-review {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
             margin-top: 30px;
         }
 
-        .review-item {
-            background: #f8f9fa;
+        .answer-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            border-left: 4px solid #667eea;
+            border-bottom: 1px solid #e9ecef;
         }
 
-        .review-item.wrong {
-            border-left-color: #dc3545;
+        .answer-item:last-child {
+            border-bottom: none;
+        }
+
+        .correct-mark {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .incorrect-mark {
+            color: #dc3545;
+            font-weight: bold;
         }
 
         .restart-btn {
-            background: #667eea;
+            background: linear-gradient(45deg, #6c5ce7, #a29bfe);
             color: white;
             border: none;
-            padding: 15px 30px;
-            border-radius: 25px;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 30px;
             cursor: pointer;
-            font-size: 1.1rem;
-            margin-top: 20px;
             transition: all 0.3s ease;
+            margin-top: 20px;
         }
 
         .restart-btn:hover {
-            background: #5a6fd8;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.3);
         }
 
-        @media (max-width: 600px) {
-            .option-buttons {
-                flex-direction: column;
-                align-items: center;
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
             }
             
-            .answers {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
+            .header {
+                padding: 20px;
             }
             
-            .game-header {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .setup-screen, .game-screen, .result-screen {
+                padding: 20px;
+            }
+            
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .game-info {
                 flex-direction: column;
                 gap: 10px;
             }
@@ -276,207 +310,319 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎯 字音字形互動小遊戲</h1>
+            <h1>🎯 字音字形小遊戲</h1>
         </div>
-        
-        <div class="content">
-            <!-- 設定畫面 -->
-            <div class="setup-screen" id="setupScreen">
+
+        <!-- 設定畫面 -->
+        <div id="setupScreen" class="setup-screen">
+            <div class="setup-options">
                 <div class="option-group">
-                    <h3>選擇年級程度</h3>
+                    <h3>📚 選擇年級</h3>
                     <div class="option-buttons">
                         <button class="option-btn" data-grade="low">低年級 (1-2年級)</button>
                         <button class="option-btn" data-grade="mid">中年級 (3-4年級)</button>
                         <button class="option-btn" data-grade="high">高年級 (5-6年級)</button>
                     </div>
                 </div>
-                
+
                 <div class="option-group">
-                    <h3>選擇挑戰時間</h3>
+                    <h3>⏰ 選擇時間</h3>
                     <div class="option-buttons">
-                        <button class="option-btn" data-time="120">2分鐘 ⚡</button>
-                        <button class="option-btn" data-time="180">3分鐘 🏃</button>
-                        <button class="option-btn" data-time="300">5分鐘 🚶</button>
+                        <button class="option-btn" data-time="120">2分鐘</button>
+                        <button class="option-btn" data-time="180">3分鐘</button>
+                        <button class="option-btn" data-time="300">5分鐘</button>
                     </div>
                 </div>
-                
-                <button class="start-btn" onclick="startGame()">開始遊戲 🚀</button>
             </div>
-            
-            <!-- 遊戲畫面 -->
-            <div class="game-screen" id="gameScreen">
-                <div class="game-header">
-                    <div class="timer" id="timer">⏰ 5:00</div>
-                    <div class="progress" id="progress">第 1 題 / 20 題</div>
-                </div>
-                
-                <div class="question-card">
-                    <div class="question-type" id="questionType">字音題</div>
-                    <div class="question-text" id="questionText">請選擇正確的讀音</div>
-                    <div class="answers" id="answers"></div>
-                    <button class="next-btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">下一題</button>
-                </div>
+
+            <button class="start-btn" onclick="startGame()">🚀 開始遊戲</button>
+        </div>
+
+        <!-- 遊戲畫面 -->
+        <div id="gameScreen" class="game-screen hidden">
+            <div class="game-info">
+                <div class="timer" id="timer">3:00</div>
+                <div class="progress" id="progress">第 1 題 / 20 題</div>
             </div>
-            
-            <!-- 結果畫面 -->
-            <div class="result-screen" id="resultScreen">
-                <div class="score-display">
-                    <h2>🎉 遊戲結束！</h2>
-                    <p id="finalScore">總分：0 / 20</p>
-                    <p id="accuracy">正確率：0%</p>
-                    <p id="timeUsed">用時：0分0秒</p>
-                </div>
-                
-                <div class="review-section">
-                    <h3>📝 題目回顧</h3>
-                    <div id="reviewList"></div>
-                </div>
-                
-                <button class="restart-btn" onclick="restartGame()">重新開始</button>
+
+            <div class="question-card">
+                <div class="question-type" id="questionType">字音題</div>
+                <div class="question-text" id="questionText"></div>
+                <div class="options-grid" id="optionsGrid"></div>
+                <button class="next-btn hidden" id="nextBtn" onclick="nextQuestion()">下一題 →</button>
             </div>
+        </div>
+
+        <!-- 結果畫面 -->
+        <div id="resultScreen" class="result-screen hidden">
+            <div class="result-card">
+                <h2>🎉 遊戲結束！</h2>
+                <div class="score" id="finalScore">0/20</div>
+                <div id="scoreMessage"></div>
+            </div>
+
+            <div class="answers-review">
+                <h3>📝 答題回顧</h3>
+                <div id="answersReview"></div>
+            </div>
+
+            <button class="restart-btn" onclick="restartGame()">🔄 重新開始</button>
         </div>
     </div>
 
     <script>
+        // 遊戲狀態
         let gameState = {
-            grade: '',
-            timeLimit: 0,
+            grade: null,
+            timeLimit: null,
             currentQuestion: 0,
             score: 0,
             questions: [],
             userAnswers: [],
-            startTime: 0,
+            timeRemaining: null,
             timer: null
         };
 
-        // 題庫
+        // 題庫資料
         const questionBank = {
             low: {
                 pronunciation: [
-                    {question: '「大」的正確讀音是？', options: ['ㄉㄞˋ', 'ㄉㄚˋ', 'ㄊㄚˋ', 'ㄉㄚ'], correct: 1},
-                    {question: '「小」的正確讀音是？', options: ['ㄒㄧㄠ', 'ㄒㄧㄠˋ', 'ㄒㄧㄠˇ', 'ㄒㄧㄠˊ'], correct: 2},
-                    {question: '「水」的正確讀音是？', options: ['ㄕㄨㄟ', 'ㄕㄨㄟˋ', 'ㄕㄨㄟˊ', 'ㄕㄨㄟˇ'], correct: 3},
-                    {question: '「火」的正確讀音是？', options: ['ㄏㄨㄛˇ', 'ㄏㄨㄛ', 'ㄏㄨㄛˋ', 'ㄏㄨㄛˊ'], correct: 0},
-                    {question: '「山」的正確讀音是？', options: ['ㄙㄢ', 'ㄕㄢ', 'ㄕㄢˊ', 'ㄕㄢˇ'], correct: 1},
-                    {question: '「人」的正確讀音是？', options: ['ㄖㄣ', 'ㄖㄣˇ', 'ㄖㄣˊ', 'ㄖㄣˋ'], correct: 2},
-                    {question: '「手」的正確讀音是？', options: ['ㄕㄡ', 'ㄕㄡˋ', 'ㄕㄡˊ', 'ㄕㄡˇ'], correct: 3},
-                    {question: '「口」的正確讀音是？', options: ['ㄎㄡˇ', 'ㄎㄡ', 'ㄎㄡˋ', 'ㄎㄡˊ'], correct: 0},
-                    {question: '「心」的正確讀音是？', options: ['ㄒㄧㄣˊ', 'ㄒㄧㄣ', 'ㄒㄧㄣˇ', 'ㄒㄧㄣˋ'], correct: 1},
-                    {question: '「日」的正確讀音是？', options: ['ㄖ', 'ㄖˊ', 'ㄖˋ', 'ㄖˇ'], correct: 2}
+                    {q: "「大象」的「象」字注音是？", options: ["ㄒㄧㄤˋ", "ㄒㄧㄤˊ", "ㄒㄧㄤ", "ㄒㄧㄤˇ"], correct: 0},
+                    {q: "「小鳥」的「鳥」字注音是？", options: ["ㄋㄧㄠˇ", "ㄋㄧㄠˊ", "ㄋㄧㄠ", "ㄋㄧㄠˋ"], correct: 0},
+                    {q: "「花朵」的「花」字注音是？", options: ["ㄏㄨㄚ", "ㄏㄨㄚˊ", "ㄏㄨㄚˇ", "ㄏㄨㄚˋ"], correct: 0},
+                    {q: "「水果」的「水」字注音是？", options: ["ㄕㄨㄟˇ", "ㄕㄨㄟˊ", "ㄕㄨㄟ", "ㄕㄨㄟˋ"], correct: 0},
+                    {q: "「太陽」的「太」字注音是？", options: ["ㄊㄞˋ", "ㄊㄞˊ", "ㄊㄞ", "ㄊㄞˇ"], correct: 0},
+                    {q: "「月亮」的「月」字注音是？", options: ["ㄩㄝˋ", "ㄩㄝˊ", "ㄩㄝ", "ㄩㄝˇ"], correct: 0},
+                    {q: "「白雲」的「白」字注音是？", options: ["ㄅㄞˊ", "ㄅㄞ", "ㄅㄞˇ", "ㄅㄞˋ"], correct: 0},
+                    {q: "「綠草」的「草」字注音是？", options: ["ㄘㄠˇ", "ㄘㄠˊ", "ㄘㄠ", "ㄘㄠˋ"], correct: 0},
+                    {q: "「紅色」的「紅」字注音是？", options: ["ㄏㄨㄥˊ", "ㄏㄨㄥ", "ㄏㄨㄥˇ", "ㄏㄨㄥˋ"], correct: 0},
+                    {q: "「藍天」的「藍」字注音是？", options: ["ㄌㄢˊ", "ㄌㄢ", "ㄌㄢˇ", "ㄌㄢˋ"], correct: 0},
+                    {q: "「黃金」的「黃」字注音是？", options: ["ㄏㄨㄤˊ", "ㄏㄨㄤ", "ㄏㄨㄤˇ", "ㄏㄨㄤˋ"], correct: 0},
+                    {q: "「黑夜」的「黑」字注音是？", options: ["ㄏㄟ", "ㄏㄟˊ", "ㄏㄟˇ", "ㄏㄟˋ"], correct: 0},
+                    {q: "「白天」的「天」字注音是？", options: ["ㄊㄧㄢ", "ㄊㄧㄢˊ", "ㄊㄧㄢˇ", "ㄊㄧㄢˋ"], correct: 0},
+                    {q: "「地面」的「地」字注音是？", options: ["ㄉㄧˋ", "ㄉㄧˊ", "ㄉㄧ", "ㄉㄧˇ"], correct: 0},
+                    {q: "「人們」的「人」字注音是？", options: ["ㄖㄣˊ", "ㄖㄣ", "ㄖㄣˇ", "ㄖㄣˋ"], correct: 0},
+                    {q: "「手指」的「手」字注音是？", options: ["ㄕㄡˇ", "ㄕㄡˊ", "ㄕㄡ", "ㄕㄡˋ"], correct: 0},
+                    {q: "「眼睛」的「眼」字注音是？", options: ["ㄧㄢˇ", "ㄧㄢˊ", "ㄧㄢ", "ㄧㄢˋ"], correct: 0},
+                    {q: "「耳朵」的「耳」字注音是？", options: ["ㄦˇ", "ㄦˊ", "ㄦ", "ㄦˋ"], correct: 0},
+                    {q: "「鼻子」的「鼻」字注音是？", options: ["ㄅㄧˊ", "ㄅㄧ", "ㄅㄧˇ", "ㄅㄧˋ"], correct: 0},
+                    {q: "「嘴巴」的「嘴」字注音是？", options: ["ㄗㄨㄟˇ", "ㄗㄨㄟˊ", "ㄗㄨㄟ", "ㄗㄨㄟˋ"], correct: 0},
+                    {q: "「頭髮」的「頭」字注音是？", options: ["ㄊㄡˊ", "ㄊㄡ", "ㄊㄡˇ", "ㄊㄡˋ"], correct: 0},
+                    {q: "「腳步」的「腳」字注音是？", options: ["ㄐㄧㄠˇ", "ㄐㄧㄠˊ", "ㄐㄧㄠ", "ㄐㄧㄠˋ"], correct: 0},
+                    {q: "「身體」的「身」字注音是？", options: ["ㄕㄣ", "ㄕㄣˊ", "ㄕㄣˇ", "ㄕㄣˋ"], correct: 0},
+                    {q: "「心情」的「心」字注音是？", options: ["ㄒㄧㄣ", "ㄒㄧㄣˊ", "ㄒㄧㄣˇ", "ㄒㄧㄣˋ"], correct: 0},
+                    {q: "「愛心」的「愛」字注音是？", options: ["ㄞˋ", "ㄞˊ", "ㄞ", "ㄞˇ"], correct: 0}
                 ],
-                glyph: [
-                    {question: '「ㄉㄚˋ」樹', options: ['太', '大', '犬', '夫'], correct: 1},
-                    {question: '「ㄇㄨˋ」頭', options: ['朩', '术', '木', '未'], correct: 2},
-                    {question: '「ㄊㄧㄢˊ」地', options: ['由', '甲', '申', '田'], correct: 3},
-                    {question: '眼「ㄇㄨˋ」', options: ['目', '日', '自', '白'], correct: 0},
-                    {question: '「ㄦˇ」朵', options: ['取', '耳', '聽', '職'], correct: 1},
-                    {question: '小「ㄋㄧㄠˇ」', options: ['烏', '島', '鳥', '馬'], correct: 2},
-                    {question: '金「ㄩˊ」', options: ['漁', '鱼', '於', '魚'], correct: 3},
-                    {question: '火「ㄔㄜ」', options: ['車', '东', '軍', '連'], correct: 0},
-                    {question: '大「ㄇㄣˊ」', options: ['间', '門', '問', '聞'], correct: 1},
-                    {question: '白「ㄇㄚˇ」', options: ['鳥', '島', '馬', '烏'], correct: 2}
+                character: [
+                    {q: "ㄉㄚˋ ㄒㄧㄤˋ", word: "大象", options: ["大象", "大相", "太象", "太相"], correct: 0},
+                    {q: "ㄒㄧㄠˇ ㄋㄧㄠˇ", word: "小鳥", options: ["小鳥", "小島", "笑鳥", "笑島"], correct: 0},
+                    {q: "ㄏㄨㄚ ㄉㄨㄛˇ", word: "花朵", options: ["花朵", "花多", "華朵", "華多"], correct: 0},
+                    {q: "ㄕㄨㄟˇ ㄍㄨㄛˇ", word: "水果", options: ["水果", "誰果", "水過", "誰過"], correct: 0},
+                    {q: "ㄊㄞˋ ㄧㄤˊ", word: "太陽", options: ["太陽", "太羊", "大陽", "大羊"], correct: 0},
+                    {q: "ㄩㄝˋ ㄌㄧㄤˋ", word: "月亮", options: ["月亮", "月量", "樂亮", "樂量"], correct: 0},
+                    {q: "ㄅㄞˊ ㄩㄣˊ", word: "白雲", options: ["白雲", "百雲", "白運", "百運"], correct: 0},
+                    {q: "ㄌㄩˋ ㄘㄠˇ", word: "綠草", options: ["綠草", "路草", "綠早", "路早"], correct: 0},
+                    {q: "ㄏㄨㄥˊ ㄙㄜˋ", word: "紅色", options: ["紅色", "洪色", "紅塞", "洪塞"], correct: 0},
+                    {q: "ㄌㄢˊ ㄊㄧㄢ", word: "藍天", options: ["藍天", "蘭天", "藍添", "蘭添"], correct: 0},
+                    {q: "ㄏㄨㄤˊ ㄐㄧㄣ", word: "黃金", options: ["黃金", "皇金", "黃今", "皇今"], correct: 0},
+                    {q: "ㄏㄟ ㄧㄝˋ", word: "黑夜", options: ["黑夜", "嘿夜", "黑葉", "嘿葉"], correct: 0},
+                    {q: "ㄅㄞˊ ㄊㄧㄢ", word: "白天", options: ["白天", "百天", "白添", "百添"], correct: 0},
+                    {q: "ㄉㄧˋ ㄇㄧㄢˋ", word: "地面", options: ["地面", "弟面", "地免", "弟免"], correct: 0},
+                    {q: "ㄖㄣˊ ㄇㄣˊ", word: "人們", options: ["人們", "仁們", "人門", "仁門"], correct: 0},
+                    {q: "ㄕㄡˇ ㄓˇ", word: "手指", options: ["手指", "首指", "手紙", "首紙"], correct: 0},
+                    {q: "ㄧㄢˇ ㄐㄧㄥ", word: "眼睛", options: ["眼睛", "演睛", "眼精", "演精"], correct: 0},
+                    {q: "ㄦˇ ㄉㄨㄛ", word: "耳朵", options: ["耳朵", "而朵", "耳多", "而多"], correct: 0},
+                    {q: "ㄅㄧˊ ㄗ˙", word: "鼻子", options: ["鼻子", "比子", "鼻字", "比字"], correct: 0},
+                    {q: "ㄗㄨㄟˇ ㄅㄚ", word: "嘴巴", options: ["嘴巴", "最巴", "嘴吧", "最吧"], correct: 0},
+                    {q: "ㄊㄡˊ ㄈㄚˇ", word: "頭髮", options: ["頭髮", "投髮", "頭法", "投法"], correct: 0},
+                    {q: "ㄐㄧㄠˇ ㄅㄨˋ", word: "腳步", options: ["腳步", "角步", "腳部", "角部"], correct: 0},
+                    {q: "ㄕㄣ ㄊㄧˇ", word: "身體", options: ["身體", "申體", "身題", "申題"], correct: 0},
+                    {q: "ㄒㄧㄣ ㄑㄧㄥˊ", word: "心情", options: ["心情", "新情", "心清", "新清"], correct: 0},
+                    {q: "ㄞˋ ㄒㄧㄣ", word: "愛心", options: ["愛心", "礙心", "愛新", "礙新"], correct: 0}
                 ]
             },
             mid: {
                 pronunciation: [
-                    {question: '「處理」的「處」字讀音是？', options: ['ㄔㄨˋ', 'ㄔㄨˇ', 'ㄔㄨ', 'ㄔㄨˊ'], correct: 1},
-                    {question: '「興趣」的「興」字讀音是？', options: ['ㄒㄧㄥ', 'ㄒㄧㄥˊ', 'ㄒㄧㄥˋ', 'ㄒㄧㄥˇ'], correct: 2},
-                    {question: '「困難」的「難」字讀音是？', options: ['ㄋㄢˋ', 'ㄋㄢ', 'ㄋㄢˇ', 'ㄋㄢˊ'], correct: 3},
-                    {question: '「方便」的「便」字讀音是？', options: ['ㄅㄧㄢˋ', 'ㄆㄧㄢˊ', 'ㄅㄧㄢ', 'ㄅㄧㄢˊ'], correct: 0},
-                    {question: '「重要」的「重」字讀音是？', options: ['ㄔㄨㄥˊ', 'ㄓㄨㄥˋ', 'ㄓㄨㄥ', 'ㄓㄨㄥˊ'], correct: 1},
-                    {question: '「應該」的「應」字讀音是？', options: ['ㄧㄥˋ', 'ㄧㄥˊ', 'ㄧㄥ', 'ㄧㄥˇ'], correct: 2},
-                    {question: '「參加」的「參」字讀音是？', options: ['ㄙㄢ', 'ㄘㄢˊ', 'ㄘㄢˇ', 'ㄘㄢ'], correct: 3},
-                    {question: '「發現」的「發」字讀音是？', options: ['ㄈㄚ', 'ㄈㄚˋ', 'ㄈㄚˊ', 'ㄈㄚˇ'], correct: 0},
-                    {question: '「決定」的「決」字讀音是？', options: ['ㄐㄩㄝ', 'ㄐㄩㄝˊ', 'ㄐㄩㄝˋ', 'ㄐㄩㄝˇ'], correct: 1},
-                    {question: '「經過」的「經」字讀音是？', options: ['ㄐㄧㄥˋ', 'ㄐㄧㄥˊ', 'ㄐㄧㄥ', 'ㄐㄧㄥˇ'], correct: 2}
+                    {q: "「學習」的「習」字注音是？", options: ["ㄒㄧˊ", "ㄒㄧ", "ㄒㄧˇ", "ㄒㄧˋ"], correct: 0},
+                    {q: "「朋友」的「友」字注音是？", options: ["ㄧㄡˇ", "ㄧㄡˊ", "ㄧㄡ", "ㄧㄡˋ"], correct: 0},
+                    {q: "「快樂」的「樂」字注音是？", options: ["ㄌㄜˋ", "ㄌㄜˊ", "ㄌㄜ", "ㄌㄜˇ"], correct: 0},
+                    {q: "「美麗」的「麗」字注音是？", options: ["ㄌㄧˋ", "ㄌㄧˊ", "ㄌㄧ", "ㄌㄧˇ"], correct: 0},
+                    {q: "「聰明」的「聰」字注音是？", options: ["ㄘㄨㄥ", "ㄘㄨㄥˊ", "ㄘㄨㄥˇ", "ㄘㄨㄥˋ"], correct: 0},
+                    {q: "「勇敢」的「勇」字注音是？", options: ["ㄩㄥˇ", "ㄩㄥˊ", "ㄩㄥ", "ㄩㄥˋ"], correct: 0},
+                    {q: "「溫暖」的「溫」字注音是？", options: ["ㄨㄣ", "ㄨㄣˊ", "ㄨㄣˇ", "ㄨㄣˋ"], correct: 0},
+                    {q: "「努力」的「努」字注音是？", options: ["ㄋㄨˇ", "ㄋㄨˊ", "ㄋㄨ", "ㄋㄨˋ"], correct: 0},
+                    {q: "「希望」的「希」字注音是？", options: ["ㄒㄧ", "ㄒㄧˊ", "ㄒㄧˇ", "ㄒㄧˋ"], correct: 0},
+                    {q: "「夢想」的「夢」字注音是？", options: ["ㄇㄥˋ", "ㄇㄥˊ", "ㄇㄥ", "ㄇㄥˇ"], correct: 0},
+                    {q: "「成功」的「成」字注音是？", options: ["ㄔㄥˊ", "ㄔㄥ", "ㄔㄥˇ", "ㄔㄥˋ"], correct: 0},
+                    {q: "「進步」的「進」字注音是？", options: ["ㄐㄧㄣˋ", "ㄐㄧㄣˊ", "ㄐㄧㄣ", "ㄐㄧㄣˇ"], correct: 0},
+                    {q: "「創造」的「創」字注音是？", options: ["ㄔㄨㄤˋ", "ㄔㄨㄤˊ", "ㄔㄨㄤ", "ㄔㄨㄤˇ"], correct: 0},
+                    {q: "「發現」的「發」字注音是？", options: ["ㄈㄚ", "ㄈㄚˊ", "ㄈㄚˇ", "ㄈㄚˋ"], correct: 0},
+                    {q: "「探索」的「探」字注音是？", options: ["ㄊㄢˋ", "ㄊㄢˊ", "ㄊㄢ", "ㄊㄢˇ"], correct: 0},
+                    {q: "「研究」的「研」字注音是？", options: ["ㄧㄢˊ", "ㄧㄢ", "ㄧㄢˇ", "ㄧㄢˋ"], correct: 0},
+                    {q: "「觀察」的「觀」字注音是？", options: ["ㄍㄨㄢ", "ㄍㄨㄢˊ", "ㄍㄨㄢˇ", "ㄍㄨㄢˋ"], correct: 0},
+                    {q: "「思考」的「思」字注音是？", options: ["ㄙ", "ㄙˊ", "ㄙˇ", "ㄙˋ"], correct: 0},
+                    {q: "「想像」的「想」字注音是？", options: ["ㄒㄧㄤˇ", "ㄒㄧㄤˊ", "ㄒㄧㄤ", "ㄒㄧㄤˋ"], correct: 0},
+                    {q: "「記憶」的「記」字注音是？", options: ["ㄐㄧˋ", "ㄐㄧˊ", "ㄐㄧ", "ㄐㄧˇ"], correct: 0},
+                    {q: "「理解」的「理」字注音是？", options: ["ㄌㄧˇ", "ㄌㄧˊ", "ㄌㄧ", "ㄌㄧˋ"], correct: 0},
+                    {q: "「表達」的「表」字注音是？", options: ["ㄅㄧㄠˇ", "ㄅㄧㄠˊ", "ㄅㄧㄠ", "ㄅㄧㄠˋ"], correct: 0},
+                    {q: "「溝通」的「溝」字注音是？", options: ["ㄍㄡ", "ㄍㄡˊ", "ㄍㄡˇ", "ㄍㄡˋ"], correct: 0},
+                    {q: "「合作」的「合」字注音是？", options: ["ㄏㄜˊ", "ㄏㄜ", "ㄏㄜˇ", "ㄏㄜˋ"], correct: 0},
+                    {q: "「分享」的「分」字注音是？", options: ["ㄈㄣ", "ㄈㄣˊ", "ㄈㄣˇ", "ㄈㄣˋ"], correct: 0}
                 ],
-                glyph: [
-                    {question: '現「ㄗㄞˋ」家裡', options: ['再', '在', '載', '栽'], correct: 1},
-                    {question: '「ㄗㄨㄛˋ」功課', options: ['作', '坐', '做', '座'], correct: 2},
-                    {question: '「ㄒㄧㄤˋ」片', options: ['象', '相', '想', '像'], correct: 3},
-                    {question: '「ㄨㄢˊ」成', options: ['完', '玩', '丸', '元'], correct: 0},
-                    {question: '公「ㄩㄢˊ」', options: ['圓', '園', '元', '原'], correct: 1},
-                    {question: '「ㄇㄞˇ」東西', options: ['賣', '實', '買', '貫'], correct: 2},
-                    {question: '「ㄑㄧㄥˊ」天', options: ['清', '情', '請', '晴'], correct: 3},
-                    {question: '「ㄆㄠˇ」步', options: ['跑', '泡', '抱', '包'], correct: 0},
-                    {question: '「ㄒㄧㄠˋ」話', options: ['校', '笑', '效', '孝'], correct: 1},
-                    {question: '「ㄊㄧˊ」目', options: ['提', '踢', '題', '蹄'], correct: 2}
+                character: [
+                    {q: "ㄒㄩㄝˊ ㄒㄧˊ", word: "學習", options: ["學習", "學席", "雪習", "雪席"], correct: 0},
+                    {q: "ㄆㄥˊ ㄧㄡˇ", word: "朋友", options: ["朋友", "鵬友", "朋有", "鵬有"], correct: 0},
+                    {q: "ㄎㄨㄞˋ ㄌㄜˋ", word: "快樂", options: ["快樂", "塊樂", "快落", "塊落"], correct: 0},
+                    {q: "ㄇㄟˇ ㄌㄧˋ", word: "美麗", options: ["美麗", "每麗", "美力", "每力"], correct: 0},
+                    {q: "ㄘㄨㄥ ㄇㄧㄥˊ", word: "聰明", options: ["聰明", "蔥明", "聰名", "蔥名"], correct: 0},
+                    {q: "ㄩㄥˇ ㄍㄢˇ", word: "勇敢", options: ["勇敢", "湧敢", "勇感", "湧感"], correct: 0},
+                    {q: "ㄨㄣ ㄋㄨㄢˇ", word: "溫暖", options: ["溫暖", "文暖", "溫軟", "文軟"], correct: 0},
+                    {q: "ㄋㄨˇ ㄌㄧˋ", word: "努力", options: ["努力", "怒力", "努立", "怒立"], correct: 0},
+                    {q: "ㄒㄧ ㄨㄤˋ", word: "希望", options: ["希望", "西望", "希忘", "西忘"], correct: 0},
+                    {q: "ㄇㄥˋ ㄒㄧㄤˇ", word: "夢想", options: ["夢想", "夢響", "猛想", "猛響"], correct: 0},
+                    {q: "ㄔㄥˊ ㄍㄨㄥ", word: "成功", options: ["成功", "城功", "成工", "城工"], correct: 0},
+                    {q: "ㄐㄧㄣˋ ㄅㄨˋ", word: "進步", options: ["進步", "近步", "進部", "近部"], correct: 0},
+                    {q: "ㄔㄨㄤˋ ㄗㄠˋ", word: "創造", options: ["創造", "窗造", "創燥", "窗燥"], correct: 0},
+                    {q: "ㄈㄚ ㄒㄧㄢˋ", word: "發現", options: ["發現", "法現", "發見", "法見"], correct: 0},
+                    {q: "ㄊㄢˋ ㄙㄨㄛˇ", word: "探索", options: ["探索", "嘆索", "探鎖", "嘆鎖"], correct: 0},
+                    {q: "ㄧㄢˊ ㄐㄧㄡ", word: "研究", options: ["研究", "言究", "研救", "言救"], correct: 0},
+                    {q: "ㄍㄨㄢ ㄔㄚˊ", word: "觀察", options: ["觀察", "關察", "觀查", "關查"], correct: 0},
+                    {q: "ㄙ ㄎㄠˇ", word: "思考", options: ["思考", "司考", "思烤", "司烤"], correct: 0},
+                    {q: "ㄒㄧㄤˇ ㄒㄧㄤˋ", word: "想像", options: ["想像", "響像", "想象", "響象"], correct: 0},
+                    {q: "ㄐㄧˋ ㄧˋ", word: "記憶", options: ["記憶", "計憶", "記億", "計億"], correct: 0},
+                    {q: "ㄌㄧˇ ㄐㄧㄝˇ", word: "理解", options: ["理解", "裡解", "理姐", "裡姐"], correct: 0},
+                    {q: "ㄅㄧㄠˇ ㄉㄚˊ", word: "表達", options: ["表達", "錶達", "表答", "錶答"], correct: 0},
+                    {q: "ㄍㄡ ㄊㄨㄥ", word: "溝通", options: ["溝通", "購通", "溝痛", "購痛"], correct: 0},
+                    {q: "ㄏㄜˊ ㄗㄨㄛˋ", word: "合作", options: ["合作", "何作", "合做", "何做"], correct: 0},
+                    {q: "ㄈㄣ ㄒㄧㄤˇ", word: "分享", options: ["分享", "紛享", "分想", "紛想"], correct: 0}
                 ]
             },
             high: {
                 pronunciation: [
-                    {question: '「載歌載舞」的「載」字讀音是？', options: ['ㄗㄞˇ', 'ㄗㄞˋ', 'ㄗㄞ', 'ㄗㄞˊ'], correct: 1},
-                    {question: '「一曝十寒」的「曝」字讀音是？', options: ['ㄅㄠˋ', 'ㄆㄨ', 'ㄆㄨˋ', 'ㄆㄨˊ'], correct: 2},
-                    {question: '「削足適履」的「削」字讀音是？', options: ['ㄒㄧㄠ', 'ㄒㄩㄝˋ', 'ㄒㄧㄠˋ', 'ㄒㄩㄝ'], correct: 3},
-                    {question: '「模範」的「模」字讀音是？', options: ['ㄇㄛˊ', 'ㄇㄨˊ', 'ㄇㄛ', 'ㄇㄨ'], correct: 0},
-                    {question: '「處境」的「處」字讀音是？', options: ['ㄔㄨˋ', 'ㄔㄨˇ', 'ㄔㄨ', 'ㄔㄨˊ'], correct: 1},
-                    {question: '「血液」的「血」字讀音是？', options: ['ㄒㄧㄝˇ', 'ㄒㄩㄝ', 'ㄒㄩㄝˋ', 'ㄒㄧㄝ'], correct: 2},
-                    {question: '「供應」的「供」字讀音是？', options: ['ㄍㄨㄥˋ', 'ㄍㄨㄥˊ', 'ㄍㄨㄥˇ', 'ㄍㄨㄥ'], correct: 3},
-                    {question: '「調節」的「調」字讀音是？', options: ['ㄊㄧㄠˊ', 'ㄉㄧㄠˋ', 'ㄊㄧㄠ', 'ㄊㄧㄠˋ'], correct: 0},
-                    {question: '「薄弱」的「薄」字讀音是？', options: ['ㄅㄠˊ', 'ㄅㄛˊ', 'ㄅㄛ', 'ㄅㄠ'], correct: 1},
-                    {question: '「創造」的「創」字讀音是？', options: ['ㄔㄨㄤ', 'ㄔㄨㄤˊ', 'ㄔㄨㄤˋ', 'ㄔㄨㄤˇ'], correct: 2}
+                    {q: "「環境」的「境」字注音是？", options: ["ㄐㄧㄥˋ", "ㄐㄧㄥˊ", "ㄐㄧㄥ", "ㄐㄧㄥˇ"], correct: 0},
+                    {q: "「責任」的「責」字注音是？", options: ["ㄗㄜˊ", "ㄗㄜ", "ㄗㄜˇ", "ㄗㄜˋ"], correct: 0},
+                    {q: "「挑戰」的「挑」字注音是？", options: ["ㄊㄧㄠˇ", "ㄊㄧㄠˊ", "ㄊㄧㄠ", "ㄊㄧㄠˋ"], correct: 0},
+                    {q: "「機會」的「機」字注音是？", options: ["ㄐㄧ", "ㄐㄧˊ", "ㄐㄧˇ", "ㄐㄧˋ"], correct: 0},
+                    {q: "「困難」的「困」字注音是？", options: ["ㄎㄨㄣˋ", "ㄎㄨㄣˊ", "ㄎㄨㄣ", "ㄎㄨㄣˇ"], correct: 0},
+                    {q: "「解決」的「解」字注音是？", options: ["ㄐㄧㄝˇ", "ㄐㄧㄝˊ", "ㄐㄧㄝ", "ㄐㄧㄝˋ"], correct: 0},
+                    {q: "「影響」的「影」字注音是？", options: ["ㄧㄥˇ", "ㄧㄥˊ", "ㄧㄥ", "ㄧㄥˋ"], correct: 0},
+                    {q: "「改善」的「改」字注音是？", options: ["ㄍㄞˇ", "ㄍㄞˊ", "ㄍㄞ", "ㄍㄞˋ"], correct: 0},
+                    {q: "「提升」的「提」字注音是？", options: ["ㄊㄧˊ", "ㄊㄧ", "ㄊㄧˇ", "ㄊㄧˋ"], correct: 0},
+                    {q: "「增加」的「增」字注音是？", options: ["ㄗㄥ", "ㄗㄥˊ", "ㄗㄥˇ", "ㄗㄥˋ"], correct: 0},
+                    {q: "「減少」的「減」字注音是？", options: ["ㄐㄧㄢˇ", "ㄐㄧㄢˊ", "ㄐㄧㄢ", "ㄐㄧㄢˋ"], correct: 0},
+                    {q: "「維持」的「維」字注音是？", options: ["ㄨㄟˊ", "ㄨㄟ", "ㄨㄟˇ", "ㄨㄟˋ"], correct: 0},
+                    {q: "「保護」的「保」字注音是？", options: ["ㄅㄠˇ", "ㄅㄠˊ", "ㄅㄠ", "ㄅㄠˋ"], correct: 0},
+                    {q: "「珍惜」的「珍」字注音是？", options: ["ㄓㄣ", "ㄓㄣˊ", "ㄓㄣˇ", "ㄓㄣˋ"], correct: 0},
+                    {q: "「尊重」的「尊」字注音是？", options: ["ㄗㄨㄣ", "ㄗㄨㄣˊ", "ㄗㄨㄣˇ", "ㄗㄨㄣˋ"], correct: 0},
+                    {q: "「包容」的「包」字注音是？", options: ["ㄅㄠ", "ㄅㄠˊ", "ㄅㄠˇ", "ㄅㄠˋ"], correct: 0},
+                    {q: "「寬恕」的「寬」字注音是？", options: ["ㄎㄨㄢ", "ㄎㄨㄢˊ", "ㄎㄨㄢˇ", "ㄎㄨㄢˋ"], correct: 0},
+                    {q: "「原諒」的「原」字注音是？", options: ["ㄩㄢˊ", "ㄩㄢ", "ㄩㄢˇ", "ㄩㄢˋ"], correct: 0},
+                    {q: "「感謝」的「感」字注音是？", options: ["ㄍㄢˇ", "ㄍㄢˊ", "ㄍㄢ", "ㄍㄢˋ"], correct: 0},
+                    {q: "「欣賞」的「欣」字注音是？", options: ["ㄒㄧㄣ", "ㄒㄧㄣˊ", "ㄒㄧㄣˇ", "ㄒㄧㄣˋ"], correct: 0},
+                    {q: "「讚美」的「讚」字注音是？", options: ["ㄗㄢˋ", "ㄗㄢˊ", "ㄗㄢ", "ㄗㄢˇ"], correct: 0},
+                    {q: "「鼓勵」的「鼓」字注音是？", options: ["ㄍㄨˇ", "ㄍㄨˊ", "ㄍㄨ", "ㄍㄨˋ"], correct: 0},
+                    {q: "「支持」的「支」字注音是？", options: ["ㄓ", "ㄓˊ", "ㄓˇ", "ㄓˋ"], correct: 0},
+                    {q: "「協助」的「協」字注音是？", options: ["ㄒㄧㄝˊ", "ㄒㄧㄝ", "ㄒㄧㄝˇ", "ㄒㄧㄝˋ"], correct: 0},
+                    {q: "「貢獻」的「貢」字注音是？", options: ["ㄍㄨㄥˋ", "ㄍㄨㄥˊ", "ㄍㄨㄥ", "ㄍㄨㄥˇ"], correct: 0}
                 ],
-                glyph: [
-                    {question: '「ㄅㄧㄢˋ」別是非', options: ['辯', '辨', '辮', '瓣'], correct: 1},
-                    {question: '「ㄐㄧˋ」然如此', options: ['即', '及', '既', '急'], correct: 2},
-                    {question: '習「ㄍㄨㄢˋ」成自然', options: ['貫', '管', '罐', '慣'], correct: 3},
-                    {question: '「ㄐㄧㄥˋ」爭激烈', options: ['競', '竟', '境', '鏡'], correct: 0},
-                    {question: '「ㄐㄧㄢˇ」查作業', options: ['撿', '檢', '減', '儉'], correct: 1},
-                    {question: '「ㄗㄢˋ」時停留', options: ['漸', '慚', '暫', '斬'], correct: 2},
-                    {question: '「ㄆㄧㄥˊ」空想像', options: ['凭', '平', '評', '憑'], correct: 3},
-                    {question: '打「ㄖㄠˇ」秩序', options: ['擾', '饒', '撓', '繞'], correct: 0},
-                    {question: '「ㄙㄡ」集資料', options: ['搜', '蒐', '收', '手'], correct: 1},
-                    {question: '「ㄔㄡˊ」備計畫', options: ['愁', '稠', '籌', '綢'], correct: 2}
+                character: [
+                    {q: "ㄏㄨㄢˊ ㄐㄧㄥˋ", word: "環境", options: ["環境", "還境", "環鏡", "還鏡"], correct: 0},
+                    {q: "ㄗㄜˊ ㄖㄣˋ", word: "責任", options: ["責任", "則任", "責認", "則認"], correct: 0},
+                    {q: "ㄊㄧㄠˇ ㄓㄢˋ", word: "挑戰", options: ["挑戰", "跳戰", "挑站", "跳站"], correct: 0},
+                    {q: "ㄐㄧ ㄏㄨㄟˋ", word: "機會", options: ["機會", "雞會", "機匯", "雞匯"], correct: 0},
+                    {q: "ㄎㄨㄣˋ ㄋㄢˊ", word: "困難", options: ["困難", "昆難", "困南", "昆南"], correct: 0},
+                    {q: "ㄐㄧㄝˇ ㄐㄩㄝˊ", word: "解決", options: ["解決", "姐決", "解絕", "姐絕"], correct: 0},
+                    {q: "ㄧㄥˇ ㄒㄧㄤˇ", word: "影響", options: ["影響", "映響", "影想", "映想"], correct: 0},
+                    {q: "ㄍㄞˇ ㄕㄢˋ", word: "改善", options: ["改善", "該善", "改扇", "該扇"], correct: 0},
+                    {q: "ㄊㄧˊ ㄕㄥ", word: "提升", options: ["提升", "題升", "提生", "題生"], correct: 0},
+                    {q: "ㄗㄥ ㄐㄧㄚ", word: "增加", options: ["增加", "曾加", "增家", "曾家"], correct: 0},
+                    {q: "ㄐㄧㄢˇ ㄕㄠˇ", word: "減少", options: ["減少", "檢少", "減紹", "檢紹"], correct: 0},
+                    {q: "ㄨㄟˊ ㄔˊ", word: "維持", options: ["維持", "為持", "維遲", "為遲"], correct: 0},
+                    {q: "ㄅㄠˇ ㄏㄨˋ", word: "保護", options: ["保護", "寶護", "保戶", "寶戶"], correct: 0},
+                    {q: "ㄓㄣ ㄒㄧˊ", word: "珍惜", options: ["珍惜", "真惜", "珍息", "真息"], correct: 0},
+                    {q: "ㄗㄨㄣ ㄓㄨㄥˋ", word: "尊重", options: ["尊重", "存重", "尊種", "存種"], correct: 0},
+                    {q: "ㄅㄠ ㄖㄨㄥˊ", word: "包容", options: ["包容", "抱容", "包榮", "抱榮"], correct: 0},
+                    {q: "ㄎㄨㄢ ㄕㄨˋ", word: "寬恕", options: ["寬恕", "款恕", "寬數", "款數"], correct: 0},
+                    {q: "ㄩㄢˊ ㄌㄧㄤˋ", word: "原諒", options: ["原諒", "元諒", "原亮", "元亮"], correct: 0},
+                    {q: "ㄍㄢˇ ㄒㄧㄝˋ", word: "感謝", options: ["感謝", "趕謝", "感卸", "趕卸"], correct: 0},
+                    {q: "ㄒㄧㄣ ㄕㄤˇ", word: "欣賞", options: ["欣賞", "心賞", "欣上", "心上"], correct: 0},
+                    {q: "ㄗㄢˋ ㄇㄟˇ", word: "讚美", options: ["讚美", "暫美", "讚每", "暫每"], correct: 0},
+                    {q: "ㄍㄨˇ ㄌㄧˋ", word: "鼓勵", options: ["鼓勵", "古勵", "鼓力", "古力"], correct: 0},
+                    {q: "ㄓ ㄔˊ", word: "支持", options: ["支持", "枝持", "支遲", "枝遲"], correct: 0},
+                    {q: "ㄒㄧㄝˊ ㄓㄨˋ", word: "協助", options: ["協助", "鞋助", "協住", "鞋住"], correct: 0},
+                    {q: "ㄍㄨㄥˋ ㄒㄧㄢˋ", word: "貢獻", options: ["貢獻", "公獻", "貢現", "公現"], correct: 0}
                 ]
             }
         };
 
-        // 選項按鈕點擊事件
-        document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('option-btn')) {
-                const group = e.target.parentElement;
-                group.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
-                e.target.classList.add('selected');
-                
-                if (e.target.dataset.grade) {
-                    gameState.grade = e.target.dataset.grade;
-                } else if (e.target.dataset.time) {
-                    gameState.timeLimit = parseInt(e.target.dataset.time);
-                }
-            }
-        });
+        // 初始化設定選項
+        function initializeOptions() {
+            // 年級選項
+            document.querySelectorAll('[data-grade]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('[data-grade]').forEach(b => b.classList.remove('selected'));
+                    btn.classList.add('selected');
+                    gameState.grade = btn.dataset.grade;
+                });
+            });
 
+            // 時間選項
+            document.querySelectorAll('[data-time]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('[data-time]').forEach(b => b.classList.remove('selected'));
+                    btn.classList.add('selected');
+                    gameState.timeLimit = parseInt(btn.dataset.time);
+                    gameState.timeRemaining = gameState.timeLimit;
+                });
+            });
+        }
+
+        // 開始遊戲
         function startGame() {
+            // 檢查是否已選擇年級和時間
             if (!gameState.grade || !gameState.timeLimit) {
-                alert('請選擇年級程度和挑戰時間！');
+                alert('請先選擇年級和時間設定！');
                 return;
             }
-
-            // 準備題目
-            const bank = questionBank[gameState.grade];
-            const pronunciationQuestions = shuffleArray([...bank.pronunciation]).slice(0, 10);
-            const glyphQuestions = shuffleArray([...bank.glyph]).slice(0, 10);
             
-            gameState.questions = [
-                ...pronunciationQuestions.map(q => ({...q, type: 'pronunciation'})),
-                ...glyphQuestions.map(q => ({...q, type: 'glyph'}))
-            ];
-            gameState.questions = shuffleArray(gameState.questions);
+            // 生成題目
+            generateQuestions();
             
+            // 切換到遊戲畫面
+            document.getElementById('setupScreen').classList.add('hidden');
+            document.getElementById('gameScreen').classList.remove('hidden');
+            
+            // 重置遊戲狀態
             gameState.currentQuestion = 0;
             gameState.score = 0;
             gameState.userAnswers = [];
-            gameState.startTime = Date.now();
-
-            // 切換畫面
-            document.getElementById('setupScreen').style.display = 'none';
-            document.getElementById('gameScreen').style.display = 'block';
-
+            gameState.timeRemaining = gameState.timeLimit;
+            
             // 開始計時
             startTimer();
+            
+            // 顯示第一題
             showQuestion();
         }
 
+        // 生成題目
+        function generateQuestions() {
+            const gradeData = questionBank[gameState.grade];
+            const pronunciationQuestions = [...gradeData.pronunciation];
+            const characterQuestions = [...gradeData.character];
+            
+            // 隨機選擇10題字音和10題字形
+            const selectedPronunciation = shuffleArray(pronunciationQuestions).slice(0, 10);
+            const selectedCharacter = shuffleArray(characterQuestions).slice(0, 10);
+            
+            // 合併並打亂順序
+            gameState.questions = shuffleArray([
+                ...selectedPronunciation.map(q => ({...q, type: 'pronunciation'})),
+                ...selectedCharacter.map(q => ({...q, type: 'character'}))
+            ]);
+        }
+
+        // 打亂陣列
         function shuffleArray(array) {
             const newArray = [...array];
             for (let i = newArray.length - 1; i > 0; i--) {
@@ -486,142 +632,236 @@
             return newArray;
         }
 
+        // 開始計時
         function startTimer() {
-            let timeLeft = gameState.timeLimit;
-            const timerElement = document.getElementById('timer');
-            
             gameState.timer = setInterval(() => {
-                const minutes = Math.floor(timeLeft / 60);
-                const seconds = timeLeft % 60;
-                timerElement.textContent = `⏰ ${minutes}:${seconds.toString().padStart(2, '0')}`;
+                gameState.timeRemaining--;
+                updateTimerDisplay();
                 
-                if (timeLeft <= 0) {
-                    clearInterval(gameState.timer);
+                if (gameState.timeRemaining <= 0) {
                     endGame();
-                    return;
                 }
-                
-                timeLeft--;
             }, 1000);
         }
 
+        // 更新計時器顯示
+        function updateTimerDisplay() {
+            const minutes = Math.floor(gameState.timeRemaining / 60);
+            const seconds = gameState.timeRemaining % 60;
+            document.getElementById('timer').textContent = 
+                `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        // 顯示題目
         function showQuestion() {
             const question = gameState.questions[gameState.currentQuestion];
             
-            document.getElementById('questionType').textContent = question.type === 'pronunciation' ? '字音題' : '字形題';
-            document.getElementById('questionText').textContent = question.question;
-            document.getElementById('progress').textContent = `第 ${gameState.currentQuestion + 1} 題 / 20 題`;
+            // 更新進度
+            document.getElementById('progress').textContent = 
+                `第 ${gameState.currentQuestion + 1} 題 / 20 題`;
             
-            const answersContainer = document.getElementById('answers');
-            answersContainer.innerHTML = '';
+            // 更新題目類型
+            document.getElementById('questionType').textContent = 
+                question.type === 'pronunciation' ? '字音題' : '字形題';
             
-            question.options.forEach((option, index) => {
-                const button = document.createElement('button');
-                button.className = 'answer-btn';
-                button.textContent = option;
-                button.onclick = () => selectAnswer(index);
-                answersContainer.appendChild(button);
+            // 更新題目內容
+            if (question.type === 'pronunciation') {
+                document.getElementById('questionText').textContent = question.q;
+            } else {
+                document.getElementById('questionText').innerHTML = 
+                    `請選擇「<strong>${question.q}</strong>」的正確字形：`;
+            }
+            
+            // 生成選項
+            generateOptions(question);
+            
+            // 隱藏下一題按鈕
+            document.getElementById('nextBtn').classList.add('hidden');
+        }
+
+        // 生成選項
+        function generateOptions(question) {
+            const optionsGrid = document.getElementById('optionsGrid');
+            optionsGrid.innerHTML = '';
+            
+            // 創建選項陣列並隨機打亂
+            const shuffledOptions = question.options.map((option, index) => ({
+                text: option,
+                originalIndex: index
+            }));
+            
+            // 打亂選項順序
+            for (let i = shuffledOptions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+            }
+            
+            // 找到正確答案在新位置的索引
+            const correctAnswerNewIndex = shuffledOptions.findIndex(
+                option => option.originalIndex === question.correct
+            );
+            
+            // 更新題目的正確答案索引
+            question.shuffledCorrect = correctAnswerNewIndex;
+            
+            shuffledOptions.forEach((option, index) => {
+                const optionElement = document.createElement('div');
+                optionElement.className = 'option';
+                optionElement.textContent = option.text;
+                optionElement.addEventListener('click', () => selectOption(index));
+                optionsGrid.appendChild(optionElement);
+            });
+        }
+
+        // 選擇選項
+        function selectOption(selectedIndex) {
+            const question = gameState.questions[gameState.currentQuestion];
+            const options = document.querySelectorAll('.option');
+            
+            // 移除所有選項的點擊事件
+            options.forEach(option => {
+                option.style.pointerEvents = 'none';
             });
             
-            document.getElementById('nextBtn').style.display = 'none';
+            // 標記選擇的選項
+            options[selectedIndex].classList.add('selected');
+            
+            // 顯示正確答案
+            setTimeout(() => {
+                options.forEach((option, index) => {
+                    if (index === question.shuffledCorrect) {
+                        option.classList.add('correct');
+                    } else if (index === selectedIndex && selectedIndex !== question.shuffledCorrect) {
+                        option.classList.add('incorrect');
+                    }
+                });
+                
+                // 記錄答案
+                const isCorrect = selectedIndex === question.shuffledCorrect;
+                gameState.userAnswers.push({
+                    question: question,
+                    userAnswer: selectedIndex,
+                    correct: isCorrect
+                });
+                
+                if (isCorrect) {
+                    gameState.score++;
+                }
+                
+                // 顯示下一題按鈕
+                document.getElementById('nextBtn').classList.remove('hidden');
+            }, 500);
         }
 
-        function selectAnswer(selectedIndex) {
-            const question = gameState.questions[gameState.currentQuestion];
-            const answerButtons = document.querySelectorAll('.answer-btn');
-            
-            // 清除之前的選擇
-            answerButtons.forEach(btn => btn.classList.remove('selected'));
-            
-            // 標記選擇的答案
-            answerButtons[selectedIndex].classList.add('selected');
-            
-            // 記錄答案
-            gameState.userAnswers[gameState.currentQuestion] = selectedIndex;
-            
-            // 顯示下一題按鈕
-            document.getElementById('nextBtn').style.display = 'inline-block';
-        }
-
+        // 下一題
         function nextQuestion() {
             gameState.currentQuestion++;
             
             if (gameState.currentQuestion >= gameState.questions.length) {
                 endGame();
             } else {
+                // 重置選項樣式
+                document.querySelectorAll('.option').forEach(option => {
+                    option.classList.remove('selected', 'correct', 'incorrect');
+                    option.style.pointerEvents = 'auto';
+                });
+                
                 showQuestion();
             }
         }
 
+        // 結束遊戲
         function endGame() {
             clearInterval(gameState.timer);
             
-            // 計算分數
-            let correctCount = 0;
-            gameState.questions.forEach((question, index) => {
-                if (gameState.userAnswers[index] === question.correct) {
-                    correctCount++;
-                }
-            });
-            
-            gameState.score = correctCount;
-            const accuracy = Math.round((correctCount / gameState.questions.length) * 100);
-            const timeUsed = Math.floor((Date.now() - gameState.startTime) / 1000);
-            const minutes = Math.floor(timeUsed / 60);
-            const seconds = timeUsed % 60;
-            
-            // 顯示結果
-            document.getElementById('finalScore').textContent = `總分：${correctCount} / ${gameState.questions.length}`;
-            document.getElementById('accuracy').textContent = `正確率：${accuracy}%`;
-            document.getElementById('timeUsed').textContent = `用時：${minutes}分${seconds}秒`;
-            
-            // 顯示題目回顧
-            const reviewList = document.getElementById('reviewList');
-            reviewList.innerHTML = '';
-            
-            gameState.questions.forEach((question, index) => {
-                const isCorrect = gameState.userAnswers[index] === question.correct;
-                const reviewItem = document.createElement('div');
-                reviewItem.className = `review-item ${isCorrect ? '' : 'wrong'}`;
-                
-                const userAnswer = gameState.userAnswers[index] !== undefined ? 
-                    question.options[gameState.userAnswers[index]] : '未作答';
-                const correctAnswer = question.options[question.correct];
-                
-                reviewItem.innerHTML = `
-                    <strong>第${index + 1}題 (${question.type === 'pronunciation' ? '字音' : '字形'})：</strong>${question.question}<br>
-                    <span style="color: ${isCorrect ? '#28a745' : '#dc3545'};">你的答案：${userAnswer}</span><br>
-                    <span style="color: #28a745;">正確答案：${correctAnswer}</span>
-                `;
-                
-                reviewList.appendChild(reviewItem);
-            });
-            
             // 切換到結果畫面
-            document.getElementById('gameScreen').style.display = 'none';
-            document.getElementById('resultScreen').style.display = 'block';
+            document.getElementById('gameScreen').classList.add('hidden');
+            document.getElementById('resultScreen').classList.remove('hidden');
+            
+            // 顯示成績
+            showResults();
         }
 
+        // 顯示結果
+        function showResults() {
+            const scoreElement = document.getElementById('finalScore');
+            const messageElement = document.getElementById('scoreMessage');
+            const reviewElement = document.getElementById('answersReview');
+            
+            // 顯示分數
+            scoreElement.textContent = `${gameState.score}/20`;
+            
+            // 顯示評語
+            let message = '';
+            const percentage = (gameState.score / 20) * 100;
+            if (percentage >= 90) {
+                message = '🏆 太棒了！你是字音字形高手！';
+            } else if (percentage >= 80) {
+                message = '🎉 很好！繼續保持！';
+            } else if (percentage >= 70) {
+                message = '👍 不錯！還有進步空間！';
+            } else if (percentage >= 60) {
+                message = '💪 加油！多練習會更好！';
+            } else {
+                message = '📚 別灰心！多讀書多練習！';
+            }
+            messageElement.textContent = message;
+            
+            // 顯示答題回顧
+            reviewElement.innerHTML = '';
+            gameState.userAnswers.forEach((answer, index) => {
+                const answerItem = document.createElement('div');
+                answerItem.className = 'answer-item';
+                
+                const questionText = answer.question.type === 'pronunciation' 
+                    ? answer.question.q 
+                    : `「${answer.question.q}」的正確字形`;
+                
+                const correctAnswer = answer.question.options[answer.question.correct];
+                const userAnswer = answer.question.options[answer.userAnswer];
+                
+                answerItem.innerHTML = `
+                    <div>
+                        <strong>第${index + 1}題：</strong>${questionText}<br>
+                        <small>正確答案：${correctAnswer} | 你的答案：${userAnswer}</small>
+                    </div>
+                    <div class="${answer.correct ? 'correct-mark' : 'incorrect-mark'}">
+                        ${answer.correct ? '✓' : '✗'}
+                    </div>
+                `;
+                
+                reviewElement.appendChild(answerItem);
+            });
+        }
+
+        // 重新開始
         function restartGame() {
+            // 切換回設定畫面
+            document.getElementById('resultScreen').classList.add('hidden');
+            document.getElementById('setupScreen').classList.remove('hidden');
+            
             // 重置遊戲狀態
             gameState = {
-                grade: '',
-                timeLimit: 0,
+                grade: null,
+                timeLimit: null,
                 currentQuestion: 0,
                 score: 0,
                 questions: [],
                 userAnswers: [],
-                startTime: 0,
+                timeRemaining: null,
                 timer: null
             };
             
-            // 清除選項
-            document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
-            
-            // 回到設定畫面
-            document.getElementById('resultScreen').style.display = 'none';
-            document.getElementById('setupScreen').style.display = 'block';
+            // 清除所有選項的選中狀態
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
         }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeOptions();
+        });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9881293215778098',t:'MTc1OTM3NjI0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9881d5a695f58098',t:'MTc1OTM4MzMwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
