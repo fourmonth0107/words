@@ -11,6 +11,8 @@
     <div class="header">
       <h1>🎯 字音字形互動小遊戲</h1>
     </div>
+
+    <!-- 遊戲設定 -->
     <div class="game-setup" id="setup">
       <div class="setup-section">
         <h3>選擇挑戰時間</h3>
@@ -22,6 +24,8 @@
       </div>
       <button class="setup-btn start-btn" id="startGame">開始遊戲</button>
     </div>
+
+    <!-- 遊戲進行 -->
     <div class="game-area" id="gameArea">
       <div class="game-header">
         <div class="timer" id="timer">05:00</div>
@@ -34,6 +38,8 @@
         <button class="next-btn" id="nextBtn">下一題</button>
       </div>
     </div>
+
+    <!-- 結果 -->
     <div class="results" id="results">
       <h2>🎉 遊戲結束！</h2>
       <div class="score-display" id="scoreDisplay">85分</div>
@@ -46,7 +52,11 @@
       <button class="restart-btn" id="restartBtn">重新開始</button>
     </div>
   </div>
+
+  <!-- 引入題庫 -->
   <script src="quiz.js"></script>
+
+  <!-- 遊戲邏輯 -->
   <script>
     let gameState = {
       currentQuestions: [],
@@ -56,28 +66,39 @@
       timer: null,
       userAnswers: []
     };
+
     const startBtn = document.getElementById('startGame');
     const gameArea = document.getElementById('gameArea');
     const setup = document.getElementById('setup');
     const results = document.getElementById('results');
     const nextBtn = document.getElementById('nextBtn');
+
+    // 開始遊戲
     startBtn.addEventListener('click', () => {
+      // 取 20 題隨機題目
       gameState.currentQuestions = shuffleArray([...quizData]).slice(0,20);
       gameState.currentQuestionIndex = 0;
       gameState.score = 0;
       gameState.userAnswers = [];
-      gameState.timeLeft = 180;
+      gameState.timeLeft = 180; // 預設 3 分鐘
+
       setup.style.display = 'none';
       gameArea.style.display = 'block';
       results.style.display = 'none';
+
       startTimer();
       showQuestion();
     });
+
+    // 顯示題目
     function showQuestion() {
       const q = gameState.currentQuestions[gameState.currentQuestionIndex];
-      document.getElementById('progress').textContent = `第 ${gameState.currentQuestionIndex+1} 題 / ${gameState.currentQuestions.length} 題`;
+      document.getElementById('progress').textContent = 
+        `第 ${gameState.currentQuestionIndex+1} 題 / ${gameState.currentQuestions.length} 題`;
       document.getElementById('questionText').textContent = q.q;
-      document.getElementById('questionType').textContent = q.q.includes("注音") ? "字音題" : "字形題";
+      document.getElementById('questionType').textContent = 
+        q.q.includes("注音") ? "字音題" : "字形題";
+
       const optionsGrid = document.getElementById('optionsGrid');
       optionsGrid.innerHTML = '';
       q.options.forEach((opt, i) => {
@@ -89,6 +110,8 @@
       });
       nextBtn.style.display = 'none';
     }
+
+    // 選答案
     function selectAnswer(selected) {
       const q = gameState.currentQuestions[gameState.currentQuestionIndex];
       const optionBtns = document.querySelectorAll('.option-btn');
@@ -97,15 +120,20 @@
         if (i === q.correct) btn.classList.add('correct');
         if (i === selected && i !== q.correct) btn.classList.add('incorrect');
       });
+
       if (selected === q.correct) gameState.score++;
+
       gameState.userAnswers.push({
         q: q.q,
         answer: q.options[selected],
         correct: q.options[q.correct],
         isCorrect: selected === q.correct
       });
+
       nextBtn.style.display = 'block';
     }
+
+    // 下一題
     nextBtn.addEventListener('click', () => {
       gameState.currentQuestionIndex++;
       if (gameState.currentQuestionIndex >= gameState.currentQuestions.length) {
@@ -114,12 +142,15 @@
         showQuestion();
       }
     });
+
+    // 結束
     function endGame() {
       clearInterval(gameState.timer);
       gameArea.style.display = 'none';
       results.style.display = 'block';
       const scorePercent = Math.round((gameState.score/gameState.currentQuestions.length)*100);
       document.getElementById('scoreDisplay').textContent = `${scorePercent}分`;
+
       const answerResults = document.getElementById('answerResults');
       answerResults.innerHTML = '';
       gameState.userAnswers.forEach((ans,i)=>{
@@ -129,6 +160,8 @@
         answerResults.appendChild(div);
       });
     }
+
+    // 計時器
     function startTimer(){
       gameState.timer = setInterval(()=>{
         gameState.timeLeft--;
@@ -138,7 +171,13 @@
         if(gameState.timeLeft<=0) endGame();
       },1000);
     }
-    function shuffleArray(arr){ return arr.sort(()=>Math.random()-0.5); }
+
+    // 洗牌
+    function shuffleArray(arr){
+      return arr.sort(()=>Math.random()-0.5);
+    }
+
+    // 重新開始
     document.getElementById('restartBtn').addEventListener('click',()=>{
       results.style.display = 'none';
       setup.style.display = 'block';
