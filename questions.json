@@ -2,115 +2,1105 @@
     "low": {
         "sound": [
             {
-                "q": "「小狗」的「狗」字注音是？",
+                "q": "LOW sound 問題 1",
                 "options": [
-                    "ㄍㄡˇ",
-                    "ㄍㄡˋ",
-                    "ㄍㄠˇ",
-                    "ㄍㄠˋ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「白雲」的「白」字注音是？",
+                "q": "LOW sound 問題 2",
                 "options": [
-                    "ㄅㄞˊ",
-                    "ㄅㄞˋ",
-                    "ㄅㄞˇ",
-                    "ㄅㄞ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 3",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 4",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 5",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「花朵」的「花」字注音是？",
+                "q": "LOW sound 問題 6",
                 "options": [
-                    "ㄏㄨㄚ",
-                    "ㄏㄨㄚˊ",
-                    "ㄏㄨㄚˇ",
-                    "ㄏㄨㄚˋ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 7",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 8",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 9",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「太陽」的「太」字注音是？",
+                "q": "LOW sound 問題 10",
                 "options": [
-                    "ㄊㄞˋ",
-                    "ㄊㄞˇ",
-                    "ㄊㄞˊ",
-                    "ㄊㄞ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 11",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 12",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 13",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「月亮」的「月」字注音是？",
+                "q": "LOW sound 問題 14",
                 "options": [
-                    "ㄩㄝˋ",
-                    "ㄩㄝˇ",
-                    "ㄩㄝˊ",
-                    "ㄩㄝ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 15",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 16",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 17",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 18",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 19",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 20",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 21",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 22",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 23",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 24",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 25",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 26",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 27",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 28",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 29",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 30",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 31",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 32",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 33",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 34",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 35",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 36",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 37",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 38",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 39",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 40",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 41",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 42",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 43",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 44",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 45",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 46",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 47",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 48",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 49",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "LOW sound 問題 50",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
                 "type": "sound"
             }
         ],
         "shape": [
             {
-                "q": "ㄒㄧㄠˇ ㄍㄡˇ",
+                "q": "LOW shape 問題 1",
                 "options": [
-                    "小狗",
-                    "小貓",
-                    "小鳥",
-                    "小魚"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄅㄞˊ ㄩㄣˊ",
+                "q": "LOW shape 問題 2",
                 "options": [
-                    "白雲",
-                    "烏雲",
-                    "雲朵",
-                    "雲彩"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 3",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 4",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 5",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄏㄨㄚ ㄉㄨㄛˇ",
+                "q": "LOW shape 問題 6",
                 "options": [
-                    "花朵",
-                    "花園",
-                    "花瓶",
-                    "花草"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 7",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 8",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 9",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄊㄞˋ ㄧㄤˊ",
+                "q": "LOW shape 問題 10",
                 "options": [
-                    "太陽",
-                    "月亮",
-                    "星星",
-                    "彩虹"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 11",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 12",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 13",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄩㄝˋ ㄌㄧㄤˋ",
+                "q": "LOW shape 問題 14",
                 "options": [
-                    "月亮",
-                    "太陽",
-                    "星星",
-                    "彩虹"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 15",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 16",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 17",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 18",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 19",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 20",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 21",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 22",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 23",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 24",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 25",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 26",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 27",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 28",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 29",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 30",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 31",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 32",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 33",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 34",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 35",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 36",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 37",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 38",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 39",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 40",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 41",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 42",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 43",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 44",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 45",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 46",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 47",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 48",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 49",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "LOW shape 問題 50",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
                 "type": "shape"
             }
         ]
@@ -118,115 +1108,1105 @@
     "mid": {
         "sound": [
             {
-                "q": "「困難」的「困」字注音是？",
+                "q": "MID sound 問題 1",
                 "options": [
-                    "ㄎㄨㄣˋ",
-                    "ㄎㄨㄣˇ",
-                    "ㄎㄨㄣˊ",
-                    "ㄎㄨㄣ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「勇敢」的「勇」字注音是？",
+                "q": "MID sound 問題 2",
                 "options": [
-                    "ㄩㄥˇ",
-                    "ㄩㄥˊ",
-                    "ㄩㄥˋ",
-                    "ㄩㄥ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 3",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 4",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 5",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「聰明」的「聰」字注音是？",
+                "q": "MID sound 問題 6",
                 "options": [
-                    "ㄘㄨㄥ",
-                    "ㄘㄨㄥˊ",
-                    "ㄘㄨㄥˇ",
-                    "ㄘㄨㄥˋ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 7",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 8",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 9",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「美麗」的「美」字注音是？",
+                "q": "MID sound 問題 10",
                 "options": [
-                    "ㄇㄟˇ",
-                    "ㄇㄟˊ",
-                    "ㄇㄟˋ",
-                    "ㄇㄟ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 11",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 12",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 13",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「快樂」的「快」字注音是？",
+                "q": "MID sound 問題 14",
                 "options": [
-                    "ㄎㄨㄞˋ",
-                    "ㄎㄨㄞˇ",
-                    "ㄎㄨㄞˊ",
-                    "ㄎㄨㄞ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 15",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 16",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 17",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 18",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 19",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 20",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 21",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 22",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 23",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 24",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 25",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 26",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 27",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 28",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 29",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 30",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 31",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 32",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 33",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 34",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 35",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 36",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 37",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 38",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 39",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 40",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 41",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 42",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 43",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 44",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 45",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 46",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 47",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 48",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 49",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "MID sound 問題 50",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
                 "type": "sound"
             }
         ],
         "shape": [
             {
-                "q": "ㄎㄨㄣˋ ㄋㄢˊ",
+                "q": "MID shape 問題 1",
                 "options": [
-                    "困難",
-                    "簡單",
-                    "容易",
-                    "輕鬆"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄩㄥˇ ㄍㄢˇ",
+                "q": "MID shape 問題 2",
                 "options": [
-                    "勇敢",
-                    "膽小",
-                    "害怕",
-                    "恐懼"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 3",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 4",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 5",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄘㄨㄥ ㄇㄧㄥˊ",
+                "q": "MID shape 問題 6",
                 "options": [
-                    "聰明",
-                    "愚笨",
-                    "糊塗",
-                    "笨拙"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 7",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 8",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 9",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄇㄟˇ ㄌㄧˋ",
+                "q": "MID shape 問題 10",
                 "options": [
-                    "美麗",
-                    "醜陋",
-                    "難看",
-                    "普通"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 11",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 12",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 13",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄎㄨㄞˋ ㄌㄜˋ",
+                "q": "MID shape 問題 14",
                 "options": [
-                    "快樂",
-                    "悲傷",
-                    "難過",
-                    "痛苦"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 15",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 16",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 17",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 18",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 19",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 20",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 21",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 22",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 23",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 24",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 25",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 26",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 27",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 28",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 29",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 30",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 31",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 32",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 33",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 34",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 35",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 36",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 37",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 38",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 39",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 40",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 41",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 42",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 43",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 44",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 45",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 46",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 47",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 48",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 49",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "MID shape 問題 50",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
                 "type": "shape"
             }
         ]
@@ -234,115 +2214,1105 @@
     "high": {
         "sound": [
             {
-                "q": "「蒸餾」的「餾」字注音是？",
+                "q": "HIGH sound 問題 1",
                 "options": [
-                    "ㄌㄧㄡˊ",
-                    "ㄌㄧㄡˇ",
-                    "ㄌㄧㄡˋ",
-                    "ㄌㄧㄡ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「瀰漫」的「瀰」字注音是？",
+                "q": "HIGH sound 問題 2",
                 "options": [
-                    "ㄇㄧˊ",
-                    "ㄇㄧˇ",
-                    "ㄇㄧˋ",
-                    "ㄇㄧ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 3",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 4",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 5",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「璀璨」的「璀」字注音是？",
+                "q": "HIGH sound 問題 6",
                 "options": [
-                    "ㄘㄨㄟ",
-                    "ㄘㄨㄟˊ",
-                    "ㄘㄨㄟˇ",
-                    "ㄘㄨㄟˋ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 7",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 8",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 9",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「澎湃」的「澎」字注音是？",
+                "q": "HIGH sound 問題 10",
                 "options": [
-                    "ㄆㄥˊ",
-                    "ㄆㄥˇ",
-                    "ㄆㄥˋ",
-                    "ㄆㄥ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 11",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 12",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 13",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
                 "type": "sound"
             },
             {
-                "q": "「磅礡」的「磅」字注音是？",
+                "q": "HIGH sound 問題 14",
                 "options": [
-                    "ㄆㄤˊ",
-                    "ㄆㄤˇ",
-                    "ㄆㄤˋ",
-                    "ㄆㄤ"
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 15",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 16",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 17",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
                 ],
                 "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 18",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 19",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 20",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 21",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 22",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 23",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 24",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 25",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 26",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 27",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 28",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 29",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 30",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 31",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 32",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 33",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 34",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 35",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 36",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 37",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 38",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 39",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 40",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 41",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 42",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 43",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 44",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 45",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 46",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 47",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 2,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 48",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 3,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 49",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 0,
+                "type": "sound"
+            },
+            {
+                "q": "HIGH sound 問題 50",
+                "options": [
+                    "sound選項1",
+                    "sound選項2",
+                    "sound選項3",
+                    "sound選項4"
+                ],
+                "correct": 1,
                 "type": "sound"
             }
         ],
         "shape": [
             {
-                "q": "ㄓㄥ ㄌㄧㄡˊ",
+                "q": "HIGH shape 問題 1",
                 "options": [
-                    "蒸餾",
-                    "蒸發",
-                    "蒸氣",
-                    "蒸煮"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄇㄧˊ ㄇㄢˋ",
+                "q": "HIGH shape 問題 2",
                 "options": [
-                    "瀰漫",
-                    "漫長",
-                    "浪漫",
-                    "慢慢"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 3",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 4",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 5",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄘㄨㄟ ㄘㄢˋ",
+                "q": "HIGH shape 問題 6",
                 "options": [
-                    "璀璨",
-                    "燦爛",
-                    "光彩",
-                    "明亮"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 7",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 8",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 9",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄆㄥˊ ㄆㄞˋ",
+                "q": "HIGH shape 問題 10",
                 "options": [
-                    "澎湃",
-                    "洶湧",
-                    "波濤",
-                    "浪花"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 11",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 12",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 13",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
                 "type": "shape"
             },
             {
-                "q": "ㄆㄤˊ ㄅㄛˊ",
+                "q": "HIGH shape 問題 14",
                 "options": [
-                    "磅礡",
-                    "雄偉",
-                    "壯觀",
-                    "宏大"
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 15",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 16",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 17",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
                 ],
                 "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 18",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 19",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 20",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 21",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 22",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 23",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 24",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 25",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 26",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 27",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 28",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 29",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 30",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 31",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 32",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 33",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 34",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 35",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 36",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 37",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 38",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 39",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 40",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 41",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 42",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 43",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 44",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 45",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 46",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 47",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 2,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 48",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 3,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 49",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 0,
+                "type": "shape"
+            },
+            {
+                "q": "HIGH shape 問題 50",
+                "options": [
+                    "shape選項1",
+                    "shape選項2",
+                    "shape選項3",
+                    "shape選項4"
+                ],
+                "correct": 1,
                 "type": "shape"
             }
         ]
