@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字音字形互動小遊戲</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .setup-screen {
+            text-align: center;
+        }
+
+        .option-group {
+            margin: 30px 0;
+        }
+
+        .option-group h3 {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .option-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .option-btn {
+            padding: 12px 24px;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .option-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .option-btn.selected {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .start-btn {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .game-screen {
+            display: none;
+        }
+
+        .game-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+
+        .timer {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+
+        .progress {
+            font-size: 1.2rem;
+            color: #667eea;
+        }
+
+        .question-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .question-type {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .question-text {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .answers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .answer-btn {
+            padding: 15px 20px;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .answer-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .answer-btn.selected {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .next-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .next-btn:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .result-screen {
+            display: none;
+            text-align: center;
+        }
+
+        .score-display {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .score-display h2 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+        }
+
+        .score-display p {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
+
+        .review-section {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .review-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .review-item.wrong {
+            border-left-color: #dc3545;
+        }
+
+        .restart-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .restart-btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .option-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .answers {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            
+            .game-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 字音字形互動小遊戲</h1>
+        </div>
+        
+        <div class="content">
+            <!-- 設定畫面 -->
+            <div class="setup-screen" id="setupScreen">
+                <div class="option-group">
+                    <h3>選擇年級程度</h3>
+                    <div class="option-buttons">
+                        <button class="option-btn" data-grade="low">低年級 (1-2年級)</button>
+                        <button class="option-btn" data-grade="mid">中年級 (3-4年級)</button>
+                        <button class="option-btn" data-grade="high">高年級 (5-6年級)</button>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <h3>選擇挑戰時間</h3>
+                    <div class="option-buttons">
+                        <button class="option-btn" data-time="120">2分鐘 ⚡</button>
+                        <button class="option-btn" data-time="180">3分鐘 🏃</button>
+                        <button class="option-btn" data-time="300">5分鐘 🚶</button>
+                    </div>
+                </div>
+                
+                <button class="start-btn" onclick="startGame()">開始遊戲 🚀</button>
+            </div>
+            
+            <!-- 遊戲畫面 -->
+            <div class="game-screen" id="gameScreen">
+                <div class="game-header">
+                    <div class="timer" id="timer">⏰ 5:00</div>
+                    <div class="progress" id="progress">第 1 題 / 20 題</div>
+                </div>
+                
+                <div class="question-card">
+                    <div class="question-type" id="questionType">字音題</div>
+                    <div class="question-text" id="questionText">請選擇正確的讀音</div>
+                    <div class="answers" id="answers"></div>
+                    <button class="next-btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">下一題</button>
+                </div>
+            </div>
+            
+            <!-- 結果畫面 -->
+            <div class="result-screen" id="resultScreen">
+                <div class="score-display">
+                    <h2>🎉 遊戲結束！</h2>
+                    <p id="finalScore">總分：0 / 20</p>
+                    <p id="accuracy">正確率：0%</p>
+                    <p id="timeUsed">用時：0分0秒</p>
+                </div>
+                
+                <div class="review-section">
+                    <h3>📝 題目回顧</h3>
+                    <div id="reviewList"></div>
+                </div>
+                
+                <button class="restart-btn" onclick="restartGame()">重新開始</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let gameState = {
+            grade: '',
+            timeLimit: 0,
+            currentQuestion: 0,
+            score: 0,
+            questions: [],
+            userAnswers: [],
+            startTime: 0,
+            timer: null
+        };
+
+        // 題庫
+        const questionBank = {
+            low: {
+                pronunciation: [
+                    {question: '「大」的正確讀音是？', options: ['ㄉㄞˋ', 'ㄉㄚˋ', 'ㄊㄚˋ', 'ㄉㄚ'], correct: 1},
+                    {question: '「小」的正確讀音是？', options: ['ㄒㄧㄠ', 'ㄒㄧㄠˋ', 'ㄒㄧㄠˇ', 'ㄒㄧㄠˊ'], correct: 2},
+                    {question: '「水」的正確讀音是？', options: ['ㄕㄨㄟ', 'ㄕㄨㄟˋ', 'ㄕㄨㄟˊ', 'ㄕㄨㄟˇ'], correct: 3},
+                    {question: '「火」的正確讀音是？', options: ['ㄏㄨㄛˇ', 'ㄏㄨㄛ', 'ㄏㄨㄛˋ', 'ㄏㄨㄛˊ'], correct: 0},
+                    {question: '「山」的正確讀音是？', options: ['ㄙㄢ', 'ㄕㄢ', 'ㄕㄢˊ', 'ㄕㄢˇ'], correct: 1},
+                    {question: '「人」的正確讀音是？', options: ['ㄖㄣ', 'ㄖㄣˇ', 'ㄖㄣˊ', 'ㄖㄣˋ'], correct: 2},
+                    {question: '「手」的正確讀音是？', options: ['ㄕㄡ', 'ㄕㄡˋ', 'ㄕㄡˊ', 'ㄕㄡˇ'], correct: 3},
+                    {question: '「口」的正確讀音是？', options: ['ㄎㄡˇ', 'ㄎㄡ', 'ㄎㄡˋ', 'ㄎㄡˊ'], correct: 0},
+                    {question: '「心」的正確讀音是？', options: ['ㄒㄧㄣˊ', 'ㄒㄧㄣ', 'ㄒㄧㄣˇ', 'ㄒㄧㄣˋ'], correct: 1},
+                    {question: '「日」的正確讀音是？', options: ['ㄖ', 'ㄖˊ', 'ㄖˋ', 'ㄖˇ'], correct: 2}
+                ],
+                glyph: [
+                    {question: '「ㄉㄚˋ」樹', options: ['太', '大', '犬', '夫'], correct: 1},
+                    {question: '「ㄇㄨˋ」頭', options: ['朩', '术', '木', '未'], correct: 2},
+                    {question: '「ㄊㄧㄢˊ」地', options: ['由', '甲', '申', '田'], correct: 3},
+                    {question: '眼「ㄇㄨˋ」', options: ['目', '日', '自', '白'], correct: 0},
+                    {question: '「ㄦˇ」朵', options: ['取', '耳', '聽', '職'], correct: 1},
+                    {question: '小「ㄋㄧㄠˇ」', options: ['烏', '島', '鳥', '馬'], correct: 2},
+                    {question: '金「ㄩˊ」', options: ['漁', '鱼', '於', '魚'], correct: 3},
+                    {question: '火「ㄔㄜ」', options: ['車', '东', '軍', '連'], correct: 0},
+                    {question: '大「ㄇㄣˊ」', options: ['间', '門', '問', '聞'], correct: 1},
+                    {question: '白「ㄇㄚˇ」', options: ['鳥', '島', '馬', '烏'], correct: 2}
+                ]
+            },
+            mid: {
+                pronunciation: [
+                    {question: '「處理」的「處」字讀音是？', options: ['ㄔㄨˋ', 'ㄔㄨˇ', 'ㄔㄨ', 'ㄔㄨˊ'], correct: 1},
+                    {question: '「興趣」的「興」字讀音是？', options: ['ㄒㄧㄥ', 'ㄒㄧㄥˊ', 'ㄒㄧㄥˋ', 'ㄒㄧㄥˇ'], correct: 2},
+                    {question: '「困難」的「難」字讀音是？', options: ['ㄋㄢˋ', 'ㄋㄢ', 'ㄋㄢˇ', 'ㄋㄢˊ'], correct: 3},
+                    {question: '「方便」的「便」字讀音是？', options: ['ㄅㄧㄢˋ', 'ㄆㄧㄢˊ', 'ㄅㄧㄢ', 'ㄅㄧㄢˊ'], correct: 0},
+                    {question: '「重要」的「重」字讀音是？', options: ['ㄔㄨㄥˊ', 'ㄓㄨㄥˋ', 'ㄓㄨㄥ', 'ㄓㄨㄥˊ'], correct: 1},
+                    {question: '「應該」的「應」字讀音是？', options: ['ㄧㄥˋ', 'ㄧㄥˊ', 'ㄧㄥ', 'ㄧㄥˇ'], correct: 2},
+                    {question: '「參加」的「參」字讀音是？', options: ['ㄙㄢ', 'ㄘㄢˊ', 'ㄘㄢˇ', 'ㄘㄢ'], correct: 3},
+                    {question: '「發現」的「發」字讀音是？', options: ['ㄈㄚ', 'ㄈㄚˋ', 'ㄈㄚˊ', 'ㄈㄚˇ'], correct: 0},
+                    {question: '「決定」的「決」字讀音是？', options: ['ㄐㄩㄝ', 'ㄐㄩㄝˊ', 'ㄐㄩㄝˋ', 'ㄐㄩㄝˇ'], correct: 1},
+                    {question: '「經過」的「經」字讀音是？', options: ['ㄐㄧㄥˋ', 'ㄐㄧㄥˊ', 'ㄐㄧㄥ', 'ㄐㄧㄥˇ'], correct: 2}
+                ],
+                glyph: [
+                    {question: '現「ㄗㄞˋ」家裡', options: ['再', '在', '載', '栽'], correct: 1},
+                    {question: '「ㄗㄨㄛˋ」功課', options: ['作', '坐', '做', '座'], correct: 2},
+                    {question: '「ㄒㄧㄤˋ」片', options: ['象', '相', '想', '像'], correct: 3},
+                    {question: '「ㄨㄢˊ」成', options: ['完', '玩', '丸', '元'], correct: 0},
+                    {question: '公「ㄩㄢˊ」', options: ['圓', '園', '元', '原'], correct: 1},
+                    {question: '「ㄇㄞˇ」東西', options: ['賣', '實', '買', '貫'], correct: 2},
+                    {question: '「ㄑㄧㄥˊ」天', options: ['清', '情', '請', '晴'], correct: 3},
+                    {question: '「ㄆㄠˇ」步', options: ['跑', '泡', '抱', '包'], correct: 0},
+                    {question: '「ㄒㄧㄠˋ」話', options: ['校', '笑', '效', '孝'], correct: 1},
+                    {question: '「ㄊㄧˊ」目', options: ['提', '踢', '題', '蹄'], correct: 2}
+                ]
+            },
+            high: {
+                pronunciation: [
+                    {question: '「載歌載舞」的「載」字讀音是？', options: ['ㄗㄞˇ', 'ㄗㄞˋ', 'ㄗㄞ', 'ㄗㄞˊ'], correct: 1},
+                    {question: '「一曝十寒」的「曝」字讀音是？', options: ['ㄅㄠˋ', 'ㄆㄨ', 'ㄆㄨˋ', 'ㄆㄨˊ'], correct: 2},
+                    {question: '「削足適履」的「削」字讀音是？', options: ['ㄒㄧㄠ', 'ㄒㄩㄝˋ', 'ㄒㄧㄠˋ', 'ㄒㄩㄝ'], correct: 3},
+                    {question: '「模範」的「模」字讀音是？', options: ['ㄇㄛˊ', 'ㄇㄨˊ', 'ㄇㄛ', 'ㄇㄨ'], correct: 0},
+                    {question: '「處境」的「處」字讀音是？', options: ['ㄔㄨˋ', 'ㄔㄨˇ', 'ㄔㄨ', 'ㄔㄨˊ'], correct: 1},
+                    {question: '「血液」的「血」字讀音是？', options: ['ㄒㄧㄝˇ', 'ㄒㄩㄝ', 'ㄒㄩㄝˋ', 'ㄒㄧㄝ'], correct: 2},
+                    {question: '「供應」的「供」字讀音是？', options: ['ㄍㄨㄥˋ', 'ㄍㄨㄥˊ', 'ㄍㄨㄥˇ', 'ㄍㄨㄥ'], correct: 3},
+                    {question: '「調節」的「調」字讀音是？', options: ['ㄊㄧㄠˊ', 'ㄉㄧㄠˋ', 'ㄊㄧㄠ', 'ㄊㄧㄠˋ'], correct: 0},
+                    {question: '「薄弱」的「薄」字讀音是？', options: ['ㄅㄠˊ', 'ㄅㄛˊ', 'ㄅㄛ', 'ㄅㄠ'], correct: 1},
+                    {question: '「創造」的「創」字讀音是？', options: ['ㄔㄨㄤ', 'ㄔㄨㄤˊ', 'ㄔㄨㄤˋ', 'ㄔㄨㄤˇ'], correct: 2}
+                ],
+                glyph: [
+                    {question: '「ㄅㄧㄢˋ」別是非', options: ['辯', '辨', '辮', '瓣'], correct: 1},
+                    {question: '「ㄐㄧˋ」然如此', options: ['即', '及', '既', '急'], correct: 2},
+                    {question: '習「ㄍㄨㄢˋ」成自然', options: ['貫', '管', '罐', '慣'], correct: 3},
+                    {question: '「ㄐㄧㄥˋ」爭激烈', options: ['競', '竟', '境', '鏡'], correct: 0},
+                    {question: '「ㄐㄧㄢˇ」查作業', options: ['撿', '檢', '減', '儉'], correct: 1},
+                    {question: '「ㄗㄢˋ」時停留', options: ['漸', '慚', '暫', '斬'], correct: 2},
+                    {question: '「ㄆㄧㄥˊ」空想像', options: ['凭', '平', '評', '憑'], correct: 3},
+                    {question: '打「ㄖㄠˇ」秩序', options: ['擾', '饒', '撓', '繞'], correct: 0},
+                    {question: '「ㄙㄡ」集資料', options: ['搜', '蒐', '收', '手'], correct: 1},
+                    {question: '「ㄔㄡˊ」備計畫', options: ['愁', '稠', '籌', '綢'], correct: 2}
+                ]
+            }
+        };
+
+        // 選項按鈕點擊事件
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('option-btn')) {
+                const group = e.target.parentElement;
+                group.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+                e.target.classList.add('selected');
+                
+                if (e.target.dataset.grade) {
+                    gameState.grade = e.target.dataset.grade;
+                } else if (e.target.dataset.time) {
+                    gameState.timeLimit = parseInt(e.target.dataset.time);
+                }
+            }
+        });
+
+        function startGame() {
+            if (!gameState.grade || !gameState.timeLimit) {
+                alert('請選擇年級程度和挑戰時間！');
+                return;
+            }
+
+            // 準備題目
+            const bank = questionBank[gameState.grade];
+            const pronunciationQuestions = shuffleArray([...bank.pronunciation]).slice(0, 10);
+            const glyphQuestions = shuffleArray([...bank.glyph]).slice(0, 10);
+            
+            gameState.questions = [
+                ...pronunciationQuestions.map(q => ({...q, type: 'pronunciation'})),
+                ...glyphQuestions.map(q => ({...q, type: 'glyph'}))
+            ];
+            gameState.questions = shuffleArray(gameState.questions);
+            
+            gameState.currentQuestion = 0;
+            gameState.score = 0;
+            gameState.userAnswers = [];
+            gameState.startTime = Date.now();
+
+            // 切換畫面
+            document.getElementById('setupScreen').style.display = 'none';
+            document.getElementById('gameScreen').style.display = 'block';
+
+            // 開始計時
+            startTimer();
+            showQuestion();
+        }
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function startTimer() {
+            let timeLeft = gameState.timeLimit;
+            const timerElement = document.getElementById('timer');
+            
+            gameState.timer = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerElement.textContent = `⏰ ${minutes}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(gameState.timer);
+                    endGame();
+                    return;
+                }
+                
+                timeLeft--;
+            }, 1000);
+        }
+
+        function showQuestion() {
+            const question = gameState.questions[gameState.currentQuestion];
+            
+            document.getElementById('questionType').textContent = question.type === 'pronunciation' ? '字音題' : '字形題';
+            document.getElementById('questionText').textContent = question.question;
+            document.getElementById('progress').textContent = `第 ${gameState.currentQuestion + 1} 題 / 20 題`;
+            
+            const answersContainer = document.getElementById('answers');
+            answersContainer.innerHTML = '';
+            
+            question.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.className = 'answer-btn';
+                button.textContent = option;
+                button.onclick = () => selectAnswer(index);
+                answersContainer.appendChild(button);
+            });
+            
+            document.getElementById('nextBtn').style.display = 'none';
+        }
+
+        function selectAnswer(selectedIndex) {
+            const question = gameState.questions[gameState.currentQuestion];
+            const answerButtons = document.querySelectorAll('.answer-btn');
+            
+            // 清除之前的選擇
+            answerButtons.forEach(btn => btn.classList.remove('selected'));
+            
+            // 標記選擇的答案
+            answerButtons[selectedIndex].classList.add('selected');
+            
+            // 記錄答案
+            gameState.userAnswers[gameState.currentQuestion] = selectedIndex;
+            
+            // 顯示下一題按鈕
+            document.getElementById('nextBtn').style.display = 'inline-block';
+        }
+
+        function nextQuestion() {
+            gameState.currentQuestion++;
+            
+            if (gameState.currentQuestion >= gameState.questions.length) {
+                endGame();
+            } else {
+                showQuestion();
+            }
+        }
+
+        function endGame() {
+            clearInterval(gameState.timer);
+            
+            // 計算分數
+            let correctCount = 0;
+            gameState.questions.forEach((question, index) => {
+                if (gameState.userAnswers[index] === question.correct) {
+                    correctCount++;
+                }
+            });
+            
+            gameState.score = correctCount;
+            const accuracy = Math.round((correctCount / gameState.questions.length) * 100);
+            const timeUsed = Math.floor((Date.now() - gameState.startTime) / 1000);
+            const minutes = Math.floor(timeUsed / 60);
+            const seconds = timeUsed % 60;
+            
+            // 顯示結果
+            document.getElementById('finalScore').textContent = `總分：${correctCount} / ${gameState.questions.length}`;
+            document.getElementById('accuracy').textContent = `正確率：${accuracy}%`;
+            document.getElementById('timeUsed').textContent = `用時：${minutes}分${seconds}秒`;
+            
+            // 顯示題目回顧
+            const reviewList = document.getElementById('reviewList');
+            reviewList.innerHTML = '';
+            
+            gameState.questions.forEach((question, index) => {
+                const isCorrect = gameState.userAnswers[index] === question.correct;
+                const reviewItem = document.createElement('div');
+                reviewItem.className = `review-item ${isCorrect ? '' : 'wrong'}`;
+                
+                const userAnswer = gameState.userAnswers[index] !== undefined ? 
+                    question.options[gameState.userAnswers[index]] : '未作答';
+                const correctAnswer = question.options[question.correct];
+                
+                reviewItem.innerHTML = `
+                    <strong>第${index + 1}題 (${question.type === 'pronunciation' ? '字音' : '字形'})：</strong>${question.question}<br>
+                    <span style="color: ${isCorrect ? '#28a745' : '#dc3545'};">你的答案：${userAnswer}</span><br>
+                    <span style="color: #28a745;">正確答案：${correctAnswer}</span>
+                `;
+                
+                reviewList.appendChild(reviewItem);
+            });
+            
+            // 切換到結果畫面
+            document.getElementById('gameScreen').style.display = 'none';
+            document.getElementById('resultScreen').style.display = 'block';
+        }
+
+        function restartGame() {
+            // 重置遊戲狀態
+            gameState = {
+                grade: '',
+                timeLimit: 0,
+                currentQuestion: 0,
+                score: 0,
+                questions: [],
+                userAnswers: [],
+                startTime: 0,
+                timer: null
+            };
+            
+            // 清除選項
+            document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+            
+            // 回到設定畫面
+            document.getElementById('resultScreen').style.display = 'none';
+            document.getElementById('setupScreen').style.display = 'block';
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9881293215778098',t:'MTc1OTM3NjI0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
